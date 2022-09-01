@@ -32,6 +32,9 @@ input.query {
   border:2px solid rgb(126, 126, 126);
   text-indent: .5rem;
 }
+input.query:focus-visible {
+  outline-color: rgb(179, 179, 179);
+}
 input.search {
   padding: .35rem 1rem;
   border: 1px solid rgb(87, 87, 87);
