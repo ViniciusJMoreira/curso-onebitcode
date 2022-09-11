@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .first-list > li:nth-child(odd) { /* OU 2n+1 PARA NÚMEROS IMPARES CASAS */
+      color: blue;
+    }
+    .second-list > li:nth-child(even) { /* OU 2n QUE PULA DE DUAS EM DUAS CASAS */
+      color: red;
+    }
+    .second-list > li:nth-last-child(1) { /* CONTAGEM DE TRÁS PRA FRENTE */
+      color: rgb(2, 156, 105);
+    }
+    .three-list > li:nth-child(3n) { /* MÚLTIPLO DE 3 */
+      color: goldenrod;
+    }
+    .three-list > li:nth-child(1) {
+      color: chartreuse;
+    }
+  </style>
+  <title>seletores nth-child</title>
+</head>
+<body>
+  <menu class="first-list">
+    <li>Impar</li>
+    <li>Par</li>
+    <li>Impar</li>
+    <li>Par</li>
+    <li>Impar</li>
+  </menu>
+
+  <menu class="second-list">
+    <li>Impar</li>
+    <li>Par</li>
+    <li>Impar</li>
+    <li>Par</li>
+    <li>Impar e Last-Child</li>
+  </menu>
+
+  <menu class="three-list">
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+    <li>Exercicios</li>
+  </menu>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimídias</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: #b30000;
+      font-size: 1.1em;
+      font-family: 'montserrat';
+      text-transform: uppercase;
+    }
+    body {
+      max-width: 100vw;
+      min-height: 100vh;
+      background-color: black;
+    }
+    section {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="figure-section">
+      <figure>
+        <img src="imagens/logo-google.png" alt="Logo da empresa Google">
+        <figcaption><strong>Logo Atual Do Google</strong></figcaption>
+      </figure>
+    </section>
+    <section class="picture-section">
+      <picture>
+        <source media="(min-width: 768px)" srcset="imagens/grande.jpg" type="image/jpeg">
+        <source media="(min-width: 580px)" srcset="imagens/ipad.jpg" type="image/jpeg">
+        <img src="imagens/mobile.jpg" alt="Imagem para grandes dispositivos">
+      </picture>
+    </section>
+    <section class="video-section">
+      <video src="" controls loop poster="imagens/poster.jpg"></video>
+    </section>
+  </main>
+</body>
+</html>

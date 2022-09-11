@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family:'Roboto';
+  font-size: 18px;
+}
+
+#main-body {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: #fffafa;
+}
+
+article.article-blog {
+  padding: 5px 15px;
+}
+
+p.paragrafo-date {
+  color: #008080;
+}
+
+h1.article-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-color: #06c9a2;
+    }
+    a[href*="exemplo1"] { /* PODEMOS APLICAR QUALQUER TRECHO DO NOSSO ATRIBUTO */
+      color: #1f6053;
+      font-weight: bold;
+    }
+
+    a[href^="https"] { /* PODEMOS APLICAR OS PRIMEIROS TRECHOS DO ATRIBUTO */
+      background: url('../multimidia/logo.png') no-repeat;
+      padding-left: 20px;
+    }
+    a[href$=".png"] { /* PODEMOS APLICAR O ÚLTIMO TRECHO DO ATRIBUTO */
+      background-color: #1f6053;
+      padding: 10px;
+    }
+    a[data-filetype="image"] { /* PODEMOS APLICAR SOMENTE UM VALOR NO ATRIBUTO */
+      color: #fff;
+      text-decoration: none;
+    }
+    a[data-info~="external"] { /* PODEMOS ESTILIZAR/APLICAR COM 2+ VALORES DE ATRIBUTO (EXEMPLO DAS CLASSES) COM ESPAÇO ENTRE OS VALORES */
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    a[data-info~="image"] {
+      color: #fff;
+    }
+  </style>
+  <title>Seletores Atributos</title>
+</head>
+<body>
+  <a href="http://exemplo1.com.br"> Link Exemplo </a>
+  <a href="https://exemplo2.com"> Link Exemplo </a>
+  <a href="../multimidia/logo.png" data-filetype="image"> Link Imagem </a>
+  <a href="../multimidia/logo.png" data-info="image external"> Link Imagem </a>
+</body>
+</html>

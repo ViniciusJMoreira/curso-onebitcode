@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      min-height: 100vh;
+      max-width: 100vw;
+      background-color: #ffd876;
+      font-size: 18px;
+    }
+    p::selection {
+      background-color: rgb(33, 201, 47);
+      color: #fff;
+    }
+    p#paragrafo-before::before {
+      content: '> ';
+    }
+    p#paragrafo-after {
+      display: inline-block;
+      position: relative;
+      padding: 5px;
+      color: #fff;
+    }
+    p#paragrafo-after::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: goldenrod;
+      z-index: -1;
+    }
+  </style>
+  <title>Pseudo Elemento Básico</title>
+</head>
+<body>
+  <h1>Pseudo-Elementos</h1>
+
+  <p>O ::Selection ele tem como propriedade estilizar os elementos (textos) selecionados. Faça o teste aqui.</p>
+
+  <p id="paragrafo-before">Parágrafo ::Before</p>
+
+  <p id="paragrafo-after">Parágrafo ::After</p>
+</body>
+</html>

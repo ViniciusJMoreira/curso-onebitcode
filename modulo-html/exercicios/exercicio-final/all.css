@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+menu {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.article-spacex, .section-service {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+table {
+  margin: 10px 0;
+}
