@@ -1,0 +1,8 @@
+/*  UTILIZANDO O & COMERCIAL QUE REPRESENTA O (AND) DENTRO CHAVES DA CLASSE .LISTA   */
+.lista menu {
+  list-style-type: none;
+}
+.lista li {
+  color: blue;
+  font-size: larger;
+}

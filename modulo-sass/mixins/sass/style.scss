@@ -1,0 +1,28 @@
+@mixin flex($display, $flex-direction, $justify-content, $align-items, $gap) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  @include flex(flex, column, center, center, 50px);
+  background-color: #fd7e14;
+}
+
+div.container {
+  @include flex(flex, none, center, center, 0);
+  width: 100px;
+  height: 100px;
+  background-color: #ff4;
+  color: #ff0043;
+  border: 1px solid #ff0043;
+}

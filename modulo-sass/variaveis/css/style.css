@@ -1,0 +1,17 @@
+.btn-red {
+  width: 150px;
+  background-color: red;
+  font-size: Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-blue {
+  width: 150px;
+  background-color: blue;
+  font-size: Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

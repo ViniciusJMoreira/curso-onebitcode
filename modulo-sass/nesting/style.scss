@@ -1,0 +1,13 @@
+
+ /*  UTILIZANDO O & COMERCIAL QUE REPRESENTA O (AND) DENTRO CHAVES DA CLASSE .LISTA   */
+
+.lista {
+  & menu {
+    list-style-type: none;
+  }
+
+  & li {
+    color: blue;
+    font-size: larger;
+  }
+}

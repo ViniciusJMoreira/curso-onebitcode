@@ -1,0 +1,15 @@
+/* import root */
+/* import pages */
+.text-buy {
+  color: #ff4043;
+}
+
+.btn-buy {
+  padding: 0.6em 3em;
+  color: #ff4043;
+  background-color: #ff4;
+  border: 1px solid #ff4043;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

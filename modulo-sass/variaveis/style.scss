@@ -1,0 +1,22 @@
+
+$font: Arial, sans-serif;
+$width: 150px;
+$color-red: red;
+$color-blue: blue;
+$color-white: #fff;
+
+.btn-red {
+  width: $width;
+  background-color: $color-red;
+  font-size: $font;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.btn-blue {
+  width: $width;
+  background-color: $color-blue;
+  font-size: $font;
+  color: $color-white;
+  cursor: pointer;
+}
