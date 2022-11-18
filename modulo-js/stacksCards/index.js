@@ -6,7 +6,7 @@ let choice = 0
 do {
 
   choice = Number(prompt(
-    'Quantidades de Cartas : ' + cards.lenght +
+    'Quantidades de Cartas : ' + cards.length +
     '\n\nEscolha uma opção' +
     '\n[1] Adicionar uma carta' +
     '\n[2] Puxar uma carta' +
