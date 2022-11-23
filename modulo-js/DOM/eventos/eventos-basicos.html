@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Básicos</title>
+</head>
+<body>
+  <h1>Eventos básicos</h1>
+  <div>
+    <label for="onmouseenter">Evento Mouse Enter</label>
+    <input type="text" id="onmouseenter" onmouseenter="onMouseEnter()">
+  </div>
+  <div>
+    <label for="onchange">Mudança de valor</label>
+    <input type="text" id="onchange" onchange="onChange()">
+  </div>
+  <div>
+    <label for="onfocus">Foco no elemento</label>
+    <input type="text" id="onfocus" onblur="onFocus()">
+  </div>
+  <div>
+    <label for="onblur">Disfoco no elemento</label>
+    <input type="text" id="onblur" onblur="onBlur()">
+  </div>
+  <div>
+    <button onclick="onClick()">
+      Clique
+    </button>
+  </div>
+  <script src="eventos-basicos.js"></script>
+</body>
+</html>
