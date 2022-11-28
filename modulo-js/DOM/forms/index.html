@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Formulários</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <form id="requestForm">
+    <h1>Trabalhando com Formulários</h1>
+    <hr>
+    <h2>Montar Pedido</h2>
+    <label for="nameUser">Nome</label><br>
+    <input type="text" id="nameUser" name="nameUser">
+    <br><br>
+    <label for="address">Endereço de Entrega</label><br>
+    <input type="text" id="address" name="address">
+    <br><br>
+    <label for="breadType">Tipo de Pão</label><br>
+    <select name="breadType" id="breadType">
+      <option selected disabled >Selecione uma opção</option>
+      <option value="frances">Frances</option>
+    </select>
+    <br><br>
+    <label for="">Principal</label><br>
+    <label for="carne">Carne</label>
+    <input type="radio" name="principal" value="carne">
+    <label for="frango">Frango</label>
+    <input type="radio" name="principal" value="frango">
+    <label for="vegano">Vegano</label>
+    <input type="radio" name="principal" value="vegano">
+    <br><br>
+    <label for="">Salada</label><br>
+    <label for="alface">Alface</label>
+    <input type="checkbox" name="salad" id="alface" value="alface">
+    <label for="tomate">Tomate</label>
+    <input type="checkbox" name="salad" id="tomate" value="tomate">
+    <label for="azeitona">Azeitona</label>
+    <input type="checkbox" name="salad" id="azeitona" value="azeitona">
+    <label for="cenoura">Cenoura</label>
+    <input type="checkbox" name="salad" id="cenoura" value="cenoura">
+    <br><br>
+    <label for="observation">Observações</label><br>
+    <textarea name="obs" id="observation" cols="35" rows="7"></textarea>
+    <br><br>
+    <button type="submit">Fazer pedido</button>
+  </form>
+</body>
+</html>
