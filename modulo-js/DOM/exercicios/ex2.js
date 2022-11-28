@@ -33,28 +33,28 @@ addTech.addEventListener('click', function (ev){
   newRow.className = 'inputRow'
 
   const techNameLabel = createLabel('Nome Tecnologia ', 'techIdName-'+rowIndex)
-  const techNameInput = createInput('techIdName-'+rowIndex,'techName-'+rowIndex, null, 'Informe a tecnologia')
+  const techNameInput = createInput('techIdName-'+rowIndex,'techName', null, 'Informe a tecnologia')
   newRow.append(techNameLabel,techNameInput)
   newRow.appendChild(document.createElement('br'))
   newRow.appendChild(document.createElement('br'))
 
   const ExpRadioLabel = createLabel('Anos de experiencia')
   newRow.append(ExpRadioLabel,document.createElement('br'))
-  const firstRadioInput = createInput('firstRadio','inputName-'+rowIndex, '0-2 Anos', "", 'radio')
-  const firstRadioLabel = createLabel('0-2 Anos', 'firstRadio')
+  const firstRadioInput = createInput('firstRadio'+rowIndex,'inputName-'+rowIndex, '0-2 Anos', "", 'radio')
+  const firstRadioLabel = createLabel('0-2 Anos', 'firstRadio'+rowIndex)
   newRow.append(
     firstRadioInput,
     firstRadioLabel,
     document.createElement('br')
   )
-  const middleRadioInput = createInput('middleRadio','inputName-'+rowIndex, '2-4 Anos', "", 'radio')
-  const middleRadioLabel = createLabel('0-2 Anos', 'middleRadio')
+  const middleRadioInput = createInput('middleRadio'+rowIndex,'inputName-'+rowIndex, '2-4 Anos', "", 'radio')
+  const middleRadioLabel = createLabel('3-4 Anos', 'middleRadio'+rowIndex)
   newRow.append(middleRadioInput,
     middleRadioLabel,
     document.createElement('br')
   )
-  const lastRadioInput = createInput('lastRadio','inputName-'+rowIndex, '5+ Anos', "", 'radio')
-  const lastRadioLabel = createLabel('5+ Anos', 'lastRadio')
+  const lastRadioInput = createInput('lastRadio'+rowIndex,'inputName-'+rowIndex, '5+ Anos', "", 'radio')
+  const lastRadioLabel = createLabel('5+ Anos', 'lastRadio'+rowIndex)
   newRow.append(
     lastRadioInput,
     lastRadioLabel,
@@ -80,11 +80,17 @@ form.addEventListener('submit', function(ev){
 
   let technologies = Array()
   inputRows.forEach(function(row){
-    const techName = document.querySelector('#' + row.id + ' input[name="techName"]').value
-    const techExp = document.querySelector('#' + row.id + 'input[type="radio"]:checked').value
+    const techName = document.querySelector('input[name="techName"]').value
+    const techExp = document.querySelector('#' + row.id + ' input[type="radio"]:checked').value
     technologies.push(techName, techExp)
   })
   const newDev = {nameDev: nameDev.value , technologies: technologies}
   developers.push(newDev)
+
+  nameDev.value = null
+  inputRows.forEach(function(row){
+    row.remove()
+  })
+
   console.log(developers)
 })
