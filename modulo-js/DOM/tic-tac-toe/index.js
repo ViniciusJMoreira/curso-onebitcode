@@ -8,6 +8,7 @@ function updateTitle() {
 }
 
 function initializeGame() {
+  document.getElementsByName('playerName').forEach(function(element){element.value = ''})
   vBoard = [['', '', ''],['', '', ''],['', '', '']]
   turnPlayer = 'player1'
   document.querySelector('h2').innerHTML = 'Turn player <span id="turnPlayer"></span>'
