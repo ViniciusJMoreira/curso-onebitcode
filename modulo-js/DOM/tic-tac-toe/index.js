@@ -8,7 +8,6 @@ function updateTitle() {
 }
 
 function initializeGame() {
-  document.getElementsByName('playerName').forEach(function(element){element.value = ''})
   vBoard = [['', '', ''],['', '', ''],['', '', '']]
   turnPlayer = 'player1'
   document.querySelector('h2').innerHTML = 'Turn player <span id="turnPlayer"></span>'
@@ -84,11 +83,13 @@ function handleBoardClick(ev) {
   const winRegions = getWinRegions()
   if (winRegions.length > 0) {
     handleWin(winRegions)
+    document.getElementsByName('playerName').forEach(function(element){element.value = ''})
   } else if (vBoard.flat().includes('')) {
     turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
     updateTitle()
   } else {
     document.querySelector('h2').innerHTML = 'Draw!'
+    document.getElementsByName('playerName').forEach(function(element){element.value = ''})
   }
 }
 
