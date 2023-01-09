@@ -1,11 +1,11 @@
 // Metodo every executa uma função para cada elemento do array
 // retorna um valor booleano
 const age = ["26", "17", "29", "69"]
-const resultEvery = age.every(checkAge)
+const every = age.every(checkAge)
 function checkAge(age) {
   return age < 70
 }
-console.log(resultEvery) // true
+console.log(every) // true
 
 // Metodo fill substitui elementos especificos do array atual
 // As posições inicial e final devem ser especificados, caso contrario , todos elementos seram substituidos
@@ -40,3 +40,21 @@ function exibirElementos(element, i) {
   console.log(result)
 }
 arr.forEach(exibirElementos)
+
+// Metodo isArray retorna um valor booleano se o objeto é ou não um array
+const isArray = Array.isArray(arr)
+console.log(isArray)
+
+const persons = [
+  {firstname : "Malcom", lastname: "Reynolds"},
+  {firstname : "Kaylee", lastname: "Frye"},
+  {firstname : "Jayne", lastname: "Cobb"}
+];
+
+const result = persons.map(getFullName);
+
+function getFullName(item) {
+  return [item.firstname,item.lastname].join(" ");
+}
+
+console.log(result)
