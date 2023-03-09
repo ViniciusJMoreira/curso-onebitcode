@@ -1,0 +1,6 @@
+const render = require("./render")
+const store = require("./store")
+console.log('aplicação iniciada !')
+render()
+store()
+console.log('aplicação finalizada')
