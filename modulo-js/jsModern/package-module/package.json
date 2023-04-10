@@ -1,0 +1,17 @@
+{
+  "name": "package-module",
+  "version": "1.0.0",
+  "description": "meu primeiro modulo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinicius",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
+}
