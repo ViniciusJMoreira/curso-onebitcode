@@ -1,0 +1,20 @@
+{
+  "name": "usando-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install --save-dev @babel/core @babel/cli @babel/preset-env",
+    "dist": "babel index.js --out-file dist.js --presets=@babel/preset-env",
+    "src" : "babel src --out-dir dist --presets=@babel/preset-env",
+    "babel-conf" : "babel src --out-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9"
+  }
+}

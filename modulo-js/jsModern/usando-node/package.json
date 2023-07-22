@@ -1,0 +1,19 @@
+{
+  "name": "first-package-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx hello-world-npm",
+    "index": "node index.js"
+  },
+  "author": "Vinicius",
+  "license": "ISC",
+  "dependencies": {
+    "cpf": "^2.0.1",
+    "hello-world-npm": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  },
+  "description": ""
+}
