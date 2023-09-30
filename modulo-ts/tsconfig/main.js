@@ -19,4 +19,3 @@ spaceship.name = 'millennium falcon';
 setPilot(pilot, spaceship);
 accelerate(50, spaceship);
 sendToMission(spaceship);
-console.log('amareza')

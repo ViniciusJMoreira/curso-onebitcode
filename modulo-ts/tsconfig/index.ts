@@ -1,3 +1,11 @@
+
+const spaceship = {
+  name: '',
+  pilot: '',
+  speed: 0,
+  inMission : false
+}
+
 const setPilot = (newPilot: string , spaceship: {name?: string ; pilot: string; speed?: number; inMission?: boolean;}) => {
   spaceship.pilot = newPilot
 }
@@ -10,12 +18,6 @@ const sendToMission = (spaceship: { name?: string ; pilot?: string; speed?: numb
   spaceship.inMission = true
 }
 
-const spaceship = {
-  name: '',
-  pilot: '',
-  speed: 0,
-  inMission : false
-}
 
 const pilot = 'Han Solo'
 spaceship.name = 'millennium falcon'
