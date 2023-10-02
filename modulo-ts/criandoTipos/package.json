@@ -1,0 +1,13 @@
+{
+  "name": "criandotipos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tsconfig": "tsc --init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

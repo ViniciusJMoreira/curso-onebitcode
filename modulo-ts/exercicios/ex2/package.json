@@ -1,0 +1,13 @@
+{
+  "name": "ex2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsconfig": "tsc --init",
+    "tsc" : "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
