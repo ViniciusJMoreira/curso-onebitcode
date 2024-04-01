@@ -1,28 +1,32 @@
-function sendSpaceship(name:string, pilot: string) {
+function sendSpaceship(name: string, pilot: string) {
   const spaceship = {
-    name,
-    pilot,
-    speed : 30,
+    name: name,
+    pilot: pilot,
+    speed: 30,
     inMission: true
-  }
-  alert('A espaço nave ' + spaceship.name + ' no comando do piloto '+ spaceship.pilot + ' esta em orbita.')
-  return spaceship
+  };
+
+  alert(`A spaceship ${spaceship.name}, no comando do piloto ${spaceship.pilot}, foi enviada em missao com sucesso!`);
+
+  return spaceship;
 }
 
-function accelerate(speed:number, spaceship: { name:string, speed:number }) {
-  if(spaceship.speed < speed) {
-    alert('A espaçonave ' + spaceship.name + ' aumentou a velocidade para ' + speed + ' km/h.')
-  }else if(spaceship.speed > speed) {
-    alert('A espaçonave ' + spaceship.name + ' diminuiu a velocidade para ' + speed + ' km/h.')
-  }else {
-    alert('Mantem na velocidade atual')
+const spaceshipName = String(prompt('Qual é o nome da spaceship ?'));
+const spaceshipPilot = String(prompt('Qual é o nome do piloto ?'));
+
+const spaceship = sendSpaceship(spaceshipName, spaceshipPilot);
+
+function accelerate(speed: number, spaceship:{name: string, speed: number}) {
+  if (spaceship.speed < speed) {
+    alert(`A velocidade da spaceship ${spaceship.name} esta sendo aumentada ${speed}`);
+  } else if(spaceship.speed > speed) {
+    alert(`A velocidade da spaceship ${spaceship.name} esta diminuindo ${speed}`);
+  } else {
+    alert(`A velocidade continua na mesma ${speed}`);
   }
-  spaceship.speed = speed
+
+  spaceship.speed = speed;
 }
 
-const spaceshipName = String(prompt('Inserir nome da espaço nave :'))
-const pilot = String(prompt('Inserir nome do piloto :'))
-const spaceship = sendSpaceship(spaceshipName, pilot)
-const speed = Number(prompt('Insira a velocidade : '))
-accelerate(speed, spaceship)
-console.log(spaceship)
+const speed = Number(prompt('Inserir a velocidade da spaceship: '));
+accelerate(speed, spaceship);

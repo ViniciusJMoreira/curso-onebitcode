@@ -1,13 +1,10 @@
 const spaceship = {
-  name: 'X-Wing',
+  name: 'x-wing',
   speed: 0
-}
+};
 
-function accelarate(spaceship: { name: string; speed: number }, speed: number) {
+function acelerate(spaceship: { name: string; speed: number; }, speed: number) {
   spaceship.speed = speed
-}
+};
 
-accelarate(spaceship, 50)
-let example : any
-
-example = 0
+acelerate(spaceship, 10);

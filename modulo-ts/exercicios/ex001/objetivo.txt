@@ -1,0 +1,25 @@
+Exercício declarando tipos no TypeScript
+Objetivo
+Praticar TypeScript utilizando tipagem
+Instruções
+Criar 4 funções em um arquivo TypeScript
+Testar as funções chamando direto do console do navegador
+Usar criatividade nas partes não especificadas
+Criar array global para ser usado dentro das funções
+Desafio: usar página HTML e funções de entrada/saída do navegador para criar menu interativo
+Função 1
+Salvar objeto spaceship com propriedades:
+name (inserido pelo usuário)
+pilot (inserido pelo usuário)
+crew_limit (inserido pelo usuário)
+crew (array de strings inicialmente vazio)
+in_mission (booleano, inicia como falso)
+Função 2
+Adicionar membro à tripulação de uma nave
+Não pode exceder o crew_limit
+Função 3
+Enviar nave em missão se:
+Já não estiver em missão
+Pelo menos 1/3 da tripulação estiver preenchida (arredondando para baixo)
+Função 4
+Listar todas as naves registradas e suas informações

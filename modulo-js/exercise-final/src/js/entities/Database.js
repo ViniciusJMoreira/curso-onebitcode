@@ -8,6 +8,4 @@ export class Database {
   set pushData (transaction) {
     Database.#data.push(transaction)
   }
-
-  set 
 }

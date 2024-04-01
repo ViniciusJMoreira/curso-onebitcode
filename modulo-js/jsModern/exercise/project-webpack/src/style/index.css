@@ -7,8 +7,10 @@
 body {
   max-width: 100vw;
   height: 100vh;
+  font-size: 50px;
   background-color: #303a3d;
-  color: rgb(68, 39, 39);
+  color: rgb(247, 217, 217);
   display: grid;
   place-items: center;
+  letter-spacing: 5px;
 }

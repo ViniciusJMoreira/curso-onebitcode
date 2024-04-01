@@ -4,4 +4,4 @@ class Person {
     this.address = address
   }
 }
-module.exports = Person, Sobre
+module.exports = Person

@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "npm i webpack webpack-cli",
+    "run-webpack": "webpack",
+    "babel": "npm i babel-loader @babel/core @babel/preset-env",
+    "babel-file": "babel index.js --out-file dist.js --presets=@babel/preset-env",
+    "babel-dir": "babel src --out-dir dist --presets=@babel/preset-env",
+    "babel-conf" : "babel src --out-dir dist",
+    "loader-css": "npm i -D style-loader css-loader",
+    "iDev-server": "npm i -D webpack-dev-server",
+    "runDev": "webpack-dev-server"
   },
   "keywords": [],
   "author": "Vinicius",

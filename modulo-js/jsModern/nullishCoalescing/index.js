@@ -10,6 +10,6 @@ console.log({resultLogico})
 
 // O operador de coelescencia ?? nula a diferencia dos operadores lógicos não ignora o 0 , retornando falso somente null e undefined
 
-const resultNullish = a ?? b ?? d ?? c // retorna o valor a
+const resultNullish = c ?? b ?? a ?? b // retorna o valor a
 
 console.log({resultNullish})

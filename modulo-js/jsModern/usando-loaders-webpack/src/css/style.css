@@ -1,0 +1,8 @@
+body {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #1f1f50;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}

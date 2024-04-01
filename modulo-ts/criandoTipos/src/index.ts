@@ -1,7 +1,7 @@
 // literal type
 let literal : "Hello,world" // Nao podemos alterar o seu valor
 
-// literal = "hello" // Nesse caso causaria error no codigo
+// literal = "hello" // Nesse caso causaria error no codigo, porque o tipo literal tem um valor unico
 
 // union type
 
@@ -22,7 +22,6 @@ if(unionOption === "Yes"){
 type aliasOption = "Yes" | "No" | "Maybe"
 
 // a diferença do union com o alias podemos reutilizar o tipo no codigo
-
 let option : aliasOption
 option = "No"
 option = "Yes"
