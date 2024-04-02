@@ -47,5 +47,6 @@ class Film extends Product {
             this.year = year;
     }
 }
-const newbook = new Book('Seja Foda', 'Caio Carneiro', 200);
+const newbook = new Book('Seja Foda', 'Caio Car', 200);
+const newfilm = new Film('200', 2010);
 console.log(newbook);

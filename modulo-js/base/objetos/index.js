@@ -36,3 +36,26 @@ for (let i = 0; i < pessoa.endereco.cidade.length ; i++){
 }
 alert(unity)
 
+const diaSemana = new Date().getDay();
+
+const week = {
+  0 : 'Domingo',
+  1 : 'Segunda',
+  2 : 'Terca',
+  3 : 'Quarta',
+  4 : 'Quinta',
+  5 : 'Sexta',
+  6 : 'Sabado'
+};
+
+console.log(week[diaSemana]);
+
+const access = 'User';
+
+const userAcess = {
+  Admin: 1,
+  User: 2,
+  Visitor: 3
+};
+
+console.log(userAcess[access]);

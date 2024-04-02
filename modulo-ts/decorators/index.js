@@ -1,10 +1,4 @@
 "use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 ////////////////////////
 function Log() {
     return function (target, key, descriptor) {
@@ -17,6 +11,7 @@ function Log() {
             // mostrando o nome do metodo e o resultado do retorno da funcao
             console.log('-----------------');
             console.log(`O metodo ${key} retornou o valor ${JSON.stringify(result)}`);
+            // é o retorno do metodo stesso
             return result;
         };
     };
@@ -34,29 +29,23 @@ function LogClass() {
         console.log(key.name);
     };
 }
-let Planet = class Planet {
+@LogClass()
+class Planet {
     name;
     constructor(name) {
         this.name = name;
     }
     // @Decorator()
+    @Log()
     calculate(value) {
         //
         return value * 2;
     }
+    @Log()
     invertName() {
         return this.name.split('').reverse().join('');
     }
-};
-__decorate([
-    Log()
-], Planet.prototype, "calculate", null);
-__decorate([
-    Log()
-], Planet.prototype, "invertName", null);
-Planet = __decorate([
-    LogClass()
-], Planet);
+}
 const newPlanet = new Planet('Terra');
 const result = newPlanet.calculate(10);
 console.log(`Resultado ${result}`);

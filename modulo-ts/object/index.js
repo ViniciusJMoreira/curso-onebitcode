@@ -1,6 +1,6 @@
 "use strict";
 // Object feito com o tipo qualsiasi
-const obj = {
+let obj = {
     name: 'Vinicius',
     idade: 30
 };
@@ -40,6 +40,9 @@ const persona = {
 persona.idade = 20;
 // Objeto feito com classe
 class Client {
+    nome;
+    idade;
+    dataNascimento;
     constructor(nome, idade, dataNascimento) {
         this.nome = nome;
         this.idade = idade;

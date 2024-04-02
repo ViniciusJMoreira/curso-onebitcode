@@ -13,3 +13,17 @@ enum role {
   user = 'user',
   visitor = 'visitor'
 }
+
+const data = new Date().getDay();
+
+enum week {
+  'Domingo',
+  'Segunda',
+  'Terca',
+  'Quarta',
+  'Quinta',
+  'Sexta',
+  'Sabado'
+};
+
+console.log(week[data]);
